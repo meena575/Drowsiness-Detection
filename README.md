@@ -102,9 +102,9 @@ The app will launch in your default browser, and you can begin real-time drowsin
     ├── README.md                  # Project documentation
 ```
 ## Usage Instructions
-    - Once the app is running, allow access to your webcam.
-    - The app will display the webcam feed, along with eye status (Open/Closed) and a drowsiness score.
-    - If drowsiness is detected, an alarm will sound to wake up the driver.
+  - Once the app is running, allow access to your webcam.
+  - The app will display the webcam feed, along with eye status (Open/Closed) and a drowsiness score.
+  - If drowsiness is detected, an alarm will sound to wake up the driver.
 ## Contributing
 Feel free to open issues or submit pull requests for improvements or bug fixes.
 
