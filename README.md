@@ -41,7 +41,7 @@ To run this project, make sure you have the following dependencies installed:
 - Pygame
 - Streamlit
 - streamlit-webrtc
-
+## How to Run
 You can install these using the following command:
 
   ```bash
@@ -79,13 +79,13 @@ The app will launch in your default browser, and you can begin real-time drowsin
 ## How It Works
 1. **Face and Eye Detection:**
 
- - The app uses Haar Cascade Classifiers to detect faces, left eye, and right eye in the webcam feed.
+   - The app uses Haar Cascade Classifiers to detect faces, left eye, and right eye in the webcam feed.
 2. **CNN Model:**
 
-  - A CNN model is used to classify whether the eyes are open or closed based on the eye regions extracted from      the webcam feed.
+    - A CNN model is used to classify whether the eyes are open or closed based on the eye regions extracted from      the webcam feed.
 3. **Drowsiness Score:**
 
-  - The app continuously monitors the eye state. If both eyes are closed for a certain period (a score of 15),       it triggers an alarm sound to alert the driver.
+    - The app continuously monitors the eye state. If both eyes are closed for a certain period (a score of 15),       it triggers an alarm sound to alert the driver.
 ## Folder Structure
   ```bash
     
@@ -100,9 +100,9 @@ The app will launch in your default browser, and you can begin real-time drowsin
     ├── README.md                  # Project documentation
 ```
 ## Usage Instructions
-  - Once the app is running, allow access to your webcam.
-  - The app will display the webcam feed, along with eye status (Open/Closed) and a drowsiness score.
-  - If drowsiness is detected, an alarm will sound to wake up the driver.
+    - Once the app is running, allow access to your webcam.
+    - The app will display the webcam feed, along with eye status (Open/Closed) and a drowsiness score.
+    - If drowsiness is detected, an alarm will sound to wake up the driver.
 ## Contributing
 Feel free to open issues or submit pull requests for improvements or bug fixes.
 
