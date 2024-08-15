@@ -24,7 +24,7 @@ This project is a real-time drowsiness detection application that monitors a dri
 
 ## Project Demo
 
-![Watch Here](https://drive.google.com/file/d/1xjETyxO0QwACW1p6WWKTXxhhQ_mXVJ-5/view?usp=sharing)
+[Watch Here](https://drive.google.com/file/d/1xjETyxO0QwACW1p6WWKTXxhhQ_mXVJ-5/view?usp=sharing)
 This application detects drowsiness in real-time using your webcam.
 
 You can check out a live demo of the project by running the app on your local machine (instructions in the **How to Run** section).
