@@ -57,7 +57,16 @@ You can install these using the following command:
   ```
 
 2. **Download the required pre-trained model:**
-  Place the pre-trained CNN model (cnncat2.h5) in the models/ directory.
+  - Place the pre-trained CNN model (cnncat2.h5) in the models/ directory.
+    [Download Here](models/canCat2.h5)
+  - Haar Cascade Files
+
+    The Haar Cascade XML files required for face and eye detection can be found in the `haar cascade files/`     
+    folder in this repository. You can download them from the following links:
+
+    - [Download haarcascade_frontalface_alt.xml](haar%20cascade%20files/haarcascade_frontalface_alt.xml)
+    - [Download haarcascade_lefteye_2splits.xml](haar%20cascade%20files/haarcascade_lefteye_2splits.xml)
+    - [Download haarcascade_righteye_2splits.xml](haar%20cascade%20files/haarcascade_righteye_2splits.xml)
 3. **Run the Streamlit app:**
 
     ```bash
