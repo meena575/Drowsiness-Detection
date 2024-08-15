@@ -1,7 +1,7 @@
 # Drowsiness Detection System
-
+##Overview
 This project is a real-time drowsiness detection application that monitors a driver's eye state using a webcam. It uses a pre-trained Convolutional Neural Network (CNN) to detect whether a person's eyes are open or closed and raises an alarm if the person shows signs of drowsiness.
-
+![Drowsiness Detection](https://cdn.hashnode.com/res/hashnode/image/upload/v1668417910288/bFctgCHVj.jpg)
 ## Contents
 
 1. [Features](#features)
@@ -25,7 +25,6 @@ This project is a real-time drowsiness detection application that monitors a dri
 
 ## Project Demo
 
-![Drowsiness Detection](https://cdn.hashnode.com/res/hashnode/image/upload/v1668417910288/bFctgCHVj.jpg)
 
 This application detects drowsiness in real-time using your webcam.
 
@@ -46,57 +45,56 @@ To run this project, make sure you have the following dependencies installed:
 
 You can install these using the following command:
 
-```bash
-pip install opencv-python keras tensorflow numpy pygame streamlit streamlit-webrtc
-Installation
-Clone the repository:
+  ```bash
+    pip install opencv-python keras tensorflow numpy pygame streamlit streamlit-webrtc
+  ```
+## Installation
+1. **Clone the repository:**
 
-bash
-Copy code
-git clone https://github.com/your-username/drowsiness-detection.git
-cd drowsiness-detection
-Download the required pre-trained model:
+  ```bash
+    git clone https://github.com/your-username/drowsiness-detection.git
+    cd drowsiness-detection
+  ```
 
-Place the pre-trained CNN model (cnncat2.h5) in the models/ directory.
-Run the Streamlit app:
+2. **Download the required pre-trained model:**
+  Place the pre-trained CNN model (cnncat2.h5) in the models/ directory.
+3. **Run the Streamlit app:**
 
-bash
-Copy code
-streamlit run app.py
+    ```bash
+      streamlit run app.py
+    ```
 The app will launch in your default browser, and you can begin real-time drowsiness detection via your webcam.
 
-How It Works
-Face and Eye Detection:
+## How It Works
+1. **Face and Eye Detection:**
 
-The app uses Haar Cascade Classifiers to detect faces, left eye, and right eye in the webcam feed.
-CNN Model:
+ - The app uses Haar Cascade Classifiers to detect faces, left eye, and right eye in the webcam feed.
+2. **CNN Model:**
 
-A CNN model is used to classify whether the eyes are open or closed based on the eye regions extracted from the webcam feed.
-Drowsiness Score:
+  - A CNN model is used to classify whether the eyes are open or closed based on the eye regions extracted from      the webcam feed.
+3. **Drowsiness Score:**
 
-The app continuously monitors the eye state. If both eyes are closed for a certain period (a score of 15), it triggers an alarm sound to alert the driver.
-Folder Structure
-bash
-Copy code
-├── app.py                     # Main application file
-├── models/
-│   └── cnncat2.h5             # Pre-trained CNN model
-├── haar cascade files/
-│   ├── haarcascade_frontalface_alt.xml      # Haar Cascade for face detection
-│   ├── haarcascade_lefteye_2splits.xml      # Haar Cascade for left eye detection
-│   └── haarcascade_righteye_2splits.xml     # Haar Cascade for right eye detection
-├── alarm.wav                  # Alarm sound file
-├── README.md                  # Project documentation
-Usage Instructions
-Once the app is running, allow access to your webcam.
-The app will display the webcam feed, along with eye status (Open/Closed) and a drowsiness score.
-If drowsiness is detected, an alarm will sound to wake up the driver.
-Contributing
+  - The app continuously monitors the eye state. If both eyes are closed for a certain period (a score of 15),       it triggers an alarm sound to alert the driver.
+## Folder Structure
+  ```bash
+    
+    ├── app.py                     # Main application file
+    ├── models/
+    │   └── cnncat2.h5             # Pre-trained CNN model
+    ├── haar cascade files/
+    │   ├── haarcascade_frontalface_alt.xml      # Haar Cascade for face detection
+    │   ├── haarcascade_lefteye_2splits.xml      # Haar Cascade for left eye detection
+    │   └── haarcascade_righteye_2splits.xml     # Haar Cascade for right eye detection
+    ├── alarm.wav                  # Alarm sound file
+    ├── README.md                  # Project documentation
+```
+## Usage Instructions
+  - Once the app is running, allow access to your webcam.
+  - The app will display the webcam feed, along with eye status (Open/Closed) and a drowsiness score.
+  - If drowsiness is detected, an alarm will sound to wake up the driver.
+## Contributing
 Feel free to open issues or submit pull requests for improvements or bug fixes.
 
-License
-This project is licensed under the MIT License.
-
-Acknowledgments
-Haar Cascades are provided by OpenCV.
-CNN model for eye detection was trained using Keras and TensorFlow.
+## Acknowledgments
+  - Haar Cascades are provided by OpenCV.
+  - CNN model for eye detection was trained using Keras and TensorFlow.
