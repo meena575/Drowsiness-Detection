@@ -8,12 +8,11 @@ This project is a real-time drowsiness detection application that monitors a dri
 2. [Demo](#demo)
 3. [Requirements](#requirements)
 4. [Installation](#installation)
-5. [How to Run](#how-to-run)
-6. [How It Works](#how-it-works)
-7. [Folder Structure](#folder-structure)
-8. [Usage Instructions](#usage-instructions)
-9. [Contributing](#contributing)
-10. [Acknowledgments](#acknowledgments)
+5. [How It Works](#how-it-works)
+6. [Folder Structure](#folder-structure)
+7. [Usage Instructions](#usage-instructions)
+8. [Contributing](#contributing)
+9. [Acknowledgments](#acknowledgments)
 
 ## Features
 
@@ -25,6 +24,7 @@ This project is a real-time drowsiness detection application that monitors a dri
 ## Project Demo
 
 [Watch Here](https://drive.google.com/file/d/1xjETyxO0QwACW1p6WWKTXxhhQ_mXVJ-5/view?usp=sharing)
+
 This application detects drowsiness in real-time using your webcam.
 
 You can check out a live demo of the project by running the app on your local machine (instructions in the **How to Run** section).
@@ -41,7 +41,7 @@ To run this project, make sure you have the following dependencies installed:
 - Pygame
 - Streamlit
 - streamlit-webrtc
-## How to Run
+
 You can install these using the following command:
 
   ```bash
