@@ -3,17 +3,19 @@
 This project is a real-time drowsiness detection application that monitors a driver's eye state using a webcam. It uses a pre-trained Convolutional Neural Network (CNN) to detect whether a person's eyes are open or closed and raises an alarm if the person shows signs of drowsiness.
 ![Drowsiness Detection](https://cdn.hashnode.com/res/hashnode/image/upload/v1668417910288/bFctgCHVj.jpg)
 ## Contents
+1. [Objective](#Obective)
+2. [Features](#features)
+3. [Demo](#demo)
+4. [Requirements](#requirements)
+5. [Installation](#installation)
+6. [How It Works](#how-it-works)
+7. [Folder Structure](#folder-structure)
+8. [Usage Instructions](#usage-instructions)
+9. [Contributing](#contributing)
+10. [Acknowledgments](#acknowledgments)
 
-1. [Features](#features)
-2. [Demo](#demo)
-3. [Requirements](#requirements)
-4. [Installation](#installation)
-5. [How It Works](#how-it-works)
-6. [Folder Structure](#folder-structure)
-7. [Usage Instructions](#usage-instructions)
-8. [Contributing](#contributing)
-9. [Acknowledgments](#acknowledgments)
-
+## Objective
+The objective of this drowsiness detection system is to monitor a driver's alertness in real-time using computer vision and deep learning. By detecting prolonged eye closure, the system aims to prevent accidents caused by driver fatigue by issuing timely alerts to keep the driver awake and focused.
 ## Features
 
 - **Real-Time Detection**: Detects drowsiness through webcam feed using OpenCV and Keras.
