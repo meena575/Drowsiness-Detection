@@ -56,19 +56,19 @@ You can install these using the following command:
   ```
 
 2. **Download the required pre-trained model:**
-  - **Pre-trained Models**
-
-    The required pre-trained model for drowsiness detection can be found in the `models/` folder of this 
-    repository. You can download the model file from the following link:
-    - [Download cnncat2.h5](models/cnncat2.h5)
-  - **Haar Cascade Files**
-
-    The Haar Cascade XML files required for face and eye detection can be found in the `haar cascade files/`     
-    folder in this repository. You can download them from the following links:
-
-    - [Download haarcascade_frontalface_alt.xml](haar%20cascade%20files/haarcascade_frontalface_alt.xml)
-    - [Download haarcascade_lefteye_2splits.xml](haar%20cascade%20files/haarcascade_lefteye_2splits.xml)
-    - [Download haarcascade_righteye_2splits.xml](haar%20cascade%20files/haarcascade_righteye_2splits.xml)
+    - **Pre-trained Models**
+  
+      The required pre-trained model for drowsiness detection can be found in the `models/` folder of this 
+      repository. You can download the model file from the following link:
+      - [Download cnncat2.h5](models/cnncat2.h5)
+    - **Haar Cascade Files**
+  
+      The Haar Cascade XML files required for face and eye detection can be found in the `haar cascade files/`     
+      folder in this repository. You can download them from the following links:
+  
+      - [Download haarcascade_frontalface_alt.xml](haar%20cascade%20files/haarcascade_frontalface_alt.xml)
+      - [Download haarcascade_lefteye_2splits.xml](haar%20cascade%20files/haarcascade_lefteye_2splits.xml)
+      - [Download haarcascade_righteye_2splits.xml](haar%20cascade%20files/haarcascade_righteye_2splits.xml)
 3. **Run the Streamlit app:**
 
     ```bash
