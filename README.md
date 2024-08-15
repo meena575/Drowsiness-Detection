@@ -1,99 +1,85 @@
 # Drowsiness Detection System
 
-## Overview
-
-This project implements a **Drowsiness Detection System** using a Convolutional Neural Network (CNN) model to detect if the driver's eyes are closed or open in real-time. The system uses a webcam to capture video frames and analyzes them to check for signs of drowsiness. If both eyes are detected as closed for a prolonged period, an alarm is triggered to alert the driver.
-
-![Drowsiness Detection](https://cdn.hashnode.com/res/hashnode/image/upload/v1668417910288/bFctgCHVj.jpg)
+This project is a real-time drowsiness detection application that monitors a driver's eye state using a webcam. It uses a pre-trained Convolutional Neural Network (CNN) to detect whether a person's eyes are open or closed and raises an alarm if the person shows signs of drowsiness.
 
 ## Features
 
-- **Real-time drowsiness detection** using a pre-trained CNN model.
-- **Alarm system** that triggers when drowsiness is detected (eyes closed for an extended period).
-- **Webcam integration** to capture video frames for processing.
-- **Streamlit web app** interface for easy usage.
-  
-## Technologies Used
+- **Real-Time Detection**: Detects drowsiness through webcam feed using OpenCV and Keras.
+- **Alarm System**: Plays an alarm sound when the driver is detected to be drowsy.
+- **Eye State Analysis**: Analyzes both left and right eyes using Haar Cascade Classifiers.
+- **Streamlit Web App**: Simple and interactive UI built with Streamlit for real-time monitoring.
 
-- **OpenCV**: For video capture and image processing.
-- **Keras**: For loading the pre-trained CNN model.
-- **NumPy**: For efficient data manipulation.
-- **Streamlit**: To build the web application interface.
-- **Pygame**: For playing the alarm sound.
-- **WebRTC**: For live streaming video capture via webcam.
+## Demo
+![Drowsiness Detection](https://cdn.hashnode.com/res/hashnode/image/upload/v1668417910288/bFctgCHVj.jpg)
 
-## How it Works
+This application detects drowsiness in real-time using your webcam.
 
-1. **Webcam Capture**: The system captures video frames in real-time from the webcam using OpenCV.
-2. **Face & Eye Detection**: Haar cascades are used to detect the driver's face, left eye, and right eye.
-3. **Eye Classification**: A pre-trained CNN model classifies the state of the eyes (open or closed).
-4. **Score Tracking**: The system maintains a score that increases if the eyes are closed and decreases if they are open.
-5. **Alarm Trigger**: If the score exceeds a threshold, indicating that the driver's eyes have been closed for too long, an alarm sound is played to alert the driver.
+## Requirements
 
-## Setup and Installation
+To run this project, make sure you have the following dependencies installed:
 
-To run this project on your local machine, follow the steps below:
+- Python 3.x
+- OpenCV (`opencv-python`)
+- Keras
+- TensorFlow
+- NumPy
+- Pygame
+- Streamlit
+- streamlit-webrtc
 
-### Prerequisites
-
-- Python 3.7 or higher
-- `pip` (Python package installer)
-  
-### Dependencies
-
-Install the required packages by running the following command:
+You can install these using the following command:
 
 ```bash
-pip install -r requirements.txt
-Contents of requirements.txt:
+pip install opencv-python keras tensorflow numpy pygame streamlit streamlit-webrtc
+How to Run
+Clone the repository:
 
-Copy code
-opencv-python
-numpy
-keras
-streamlit
-pygame
-streamlit-webrtc
-Clone the Repository
 bash
 Copy code
-git clone https://github.com/meena575/Drowsiness-Detection.git
-cd Drowsiness-Detection
-Run the Application
-To start the Streamlit web app, run the following command:
+git clone https://github.com/your-username/drowsiness-detection.git
+cd drowsiness-detection
+Download the required pre-trained model:
+
+Place the pre-trained CNN model (cnncat2.h5) in the models/ directory.
+Run the Streamlit app:
 
 bash
 Copy code
 streamlit run app.py
-This will open a browser window displaying the application. The app will start capturing video from your webcam for drowsiness detection.
+The app will launch in your default browser, and you can begin real-time drowsiness detection via your webcam.
 
-File Structure
-plaintext
+Folder Structure
+bash
 Copy code
-.
-├── app.py                   # Main Streamlit app file
-├── models
-│   └── cnncat2.h5            # Pre-trained CNN model
-├── haar cascade files
-│   ├── haarcascade_frontalface_alt.xml
-│   ├── haarcascade_lefteye_2splits.xml
-│   └── haarcascade_righteye_2splits.xml
-├── alarm.wav                 # Alarm sound file
-└── README.md                 # Project documentation
-How to Use
-Launch the Streamlit app.
-Ensure your webcam is enabled and positioned properly to capture your face.
-The system will display a live video feed and track your eye movements in real-time.
-If the system detects that your eyes are closed for a prolonged period, it will trigger an audible alarm.
-Model Information
-The CNN model used in this project is pre-trained to classify images of eyes into two categories:
+├── app.py                     # Main application file
+├── models/
+│   └── cnncat2.h5             # Pre-trained CNN model
+├── haar cascade files/
+│   ├── haarcascade_frontalface_alt.xml      # Haar Cascade for face detection
+│   ├── haarcascade_lefteye_2splits.xml      # Haar Cascade for left eye detection
+│   └── haarcascade_righteye_2splits.xml     # Haar Cascade for right eye detection
+├── alarm.wav                  # Alarm sound file
+├── README.md                  # Project documentation
+How It Works
+Face and Eye Detection:
 
-Open: Indicates the driver's eyes are open.
-Closed: Indicates the driver's eyes are closed.
+The app uses Haar Cascade Classifiers to detect faces, left eye, and right eye in the webcam feed.
+CNN Model:
+
+A CNN model is used to classify whether the eyes are open or closed based on the eye regions extracted from the webcam feed.
+Drowsiness Score:
+
+The app continuously monitors the eye state. If both eyes are closed for a certain period (a score of 15), it triggers an alarm sound to alert the driver.
+Usage Instructions
+Once the app is running, allow access to your webcam.
+The app will display the webcam feed, along with eye status (Open/Closed) and a drowsiness score.
+If drowsiness is detected, an alarm will sound to wake up the driver.
+Contributing
+Feel free to open issues or submit pull requests for improvements or bug fixes.
+
 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License.
 
 Acknowledgments
-OpenCV
-Streamlit
-Keras
+Haar Cascades are provided by OpenCV.
+CNN model for eye detection was trained using Keras and TensorFlow.
