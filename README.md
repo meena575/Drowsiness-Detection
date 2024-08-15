@@ -13,8 +13,7 @@ This project is a real-time drowsiness detection application that monitors a dri
 7. [Folder Structure](#folder-structure)
 8. [Usage Instructions](#usage-instructions)
 9. [Contributing](#contributing)
-10. [License](#license)
-11. [Acknowledgments](#acknowledgments)
+10. [Acknowledgments](#acknowledgments)
 
 ## Features
 
@@ -57,9 +56,12 @@ You can install these using the following command:
   ```
 
 2. **Download the required pre-trained model:**
-  - Place the pre-trained CNN model (cnncat2.h5) in the models/ directory.
-    [Download Here](models/canCat2.h5)
-  - Haar Cascade Files
+  - **Pre-trained Models**
+
+    The required pre-trained model for drowsiness detection can be found in the `models/` folder of this 
+    repository. You can download the model file from the following link:
+    - [Download cnncat2.h5](models/cnncat2.h5)
+  - **Haar Cascade Files**
 
     The Haar Cascade XML files required for face and eye detection can be found in the `haar cascade files/`     
     folder in this repository. You can download them from the following links:
